@@ -4,6 +4,8 @@ import java.util.Map;
 
 public class findTheIndexOfTheFirstOccurrenceInString_25082025 {
 
+    // https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+
     public static void main(String[] args) {
 
         Map<String, String> map = Map.of(
