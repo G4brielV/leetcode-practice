@@ -2,6 +2,8 @@ package Easy;
 
 public class mergeTwoSortedLists_23082025 {
 
+    // https://leetcode.com/problems/merge-two-sorted-lists/
+
     public static void main(String[] args) {
         ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4, null)));
         ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4, null)));
@@ -32,8 +34,9 @@ public class mergeTwoSortedLists_23082025 {
         return dummy.next;
     }
 
-    public ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
 
+
+    public ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
         if(list1!=null && list2!=null){
             if(list1.val<list2.val){
                 list1.next=mergeTwoLists2(list1.next,list2);
